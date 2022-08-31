@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1><img src="./imagenes/Vector.png"></h1>
+    <div class="ingreso-texto">
+        <textarea name="ingreso-texto" id="ingreso-texto" cols="30" rows="10"></textarea>
+        
+    </div>
+
+    <div class="info">
+        <h6><img src="./imagenes/logo info.png" alt="info"></h6>
+        <p>Solo acepta letras minúsculas y sin acento</p>
+    </div>
+    <div class="botones">
+        <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+        <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+    </div>
+
+    <div class="rectangulo">
+        <div id="mensajevacio">
+            <h1><img src="./imagenes/Muñeco.png" alt="munheco" id="munheco"></h1>
+            <h1><img src="./imagenes/Frame 5.png" alt="frame5" id="frame5"></h1>
+        </div>
+        <div id="resultado">
+            <textarea name="texto-resultado" id="texto-resultado" cols="30" rows="10" disabled></textarea>
+            <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+        </div>
+        
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
